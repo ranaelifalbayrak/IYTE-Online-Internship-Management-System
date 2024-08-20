@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title> OIMS Log in</title>
+</head>
+
+<body class="signuplogin_body">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 mx-auto mt-5">
+                <div class="card mt-5 text-center">
+                    <div class="logo mt-5">
+                        <img src="iyte-logo.png" class="w-25">
+                    </div>
+                    <h1 class="header">Log-in</h1>
+                    <div class="btn-group mt-3 ms-5 me-5" role="group" aria-label="User Type">
+                        <button type="button" class="btn btn-secondary" onclick="changeUserType(1)">Student</button>
+                        <button type="button" class="btn btn-secondary" onclick="changeUserType(2)">Company</button>
+                        <button type="button" class="btn btn-secondary" onclick="changeUserType(3)">Coordinator</button>
+                        <button type="button" class="btn btn-secondary" onclick="changeUserType(4)">Secretary</button>
+                    </div>
+                    <input class="input mt-3 ms-5 me-5 rounded-pill" id="email" type="text" name="email"
+                        placeholder="E-mail">
+                    <input class="input mt-3 ms-5 me-5 rounded-pill" id="password" type="password" name="password"
+                        placeholder="Password">
+                    
+                    <input type="button" id="loginbtn" class="btn mt-3 ms-5 me-5 rounded-pill btn-danger btn-sm"
+                        value="Log-in" onclick="login()"></input>
+                        <p  class="mt-2 mb-3">Don't you have an account?<a href="sign up.html"> Sign up.</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+    
+    
+</script>
+
+</html>

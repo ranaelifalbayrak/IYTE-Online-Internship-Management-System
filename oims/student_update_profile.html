@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Applicants</title>
+</head>
+
+<body>
+    <nav class="navbar bg-danger">
+        <img src="iyte-logo.png"  class="ms-2">
+        <div class="me-5 text-white fs-2" id="name"></div>
+    </nav>
+    <div class="sidebar">
+        <a href="student_homepage.html">Homepage</a>
+        <a href="internship_applicaton.html">Internship Application</a>
+        <a href="my_applications.html">My Applications</a>
+        <a href="student_update_profile.html"> Update Profile</a>
+    </div>
+    
+    <!-- Announcement Section -->
+    <div class="container mt-4 col-7">
+        <h2>Update Profile</h2>
+        <form>
+          
+            <div class="mb-3">
+                <label for="extra" class="form-label">Write a short paragraph introducing yourself for the companies you will apply to see. 
+                    You can talk about your interests, any projects you have done and your past experiences.</label>
+                <input class="form-control" id="extra" rows="3" placeholder="Write a short paragraph."></input>
+            </div>
+            <input type="button" class="btn btn-danger" onclick="updateProfile()" value="Submit"></input>
+        </form>
+    </div>
+        
+</body>
+<script src="script.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+    window.onload = function() {
+        document.getElementById("name").innerHTML = localStorage.getItem("name");
+    }
+</script>
+
+</html>

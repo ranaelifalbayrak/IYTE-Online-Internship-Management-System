@@ -1,0 +1,242 @@
+::placeholder {
+    text-align: center; 
+ }
+.card{
+    background:rgb(248, 248, 255,.8);
+    border-radius: 30px; 
+}
+.signuplogin_body{
+    margin: 0;
+    background-image:url("iyte-bg.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+}
+.btn-group .btn.active {
+    background-color: #dc3545; 
+    color: white; 
+}
+
+.sidebar {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+  
+  
+  .sidebar a {
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  
+ 
+  .sidebar a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+  }
+  
+  
+  div.content {
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
+  }
+  
+  
+  @media screen and (max-width: 900px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+  }
+  
+  
+  @media screen and (max-width: 400px) {
+    .sidebar a {
+      text-align: center;
+      float: none;
+    }
+  }
+
+  
+.navbar img {
+    width: 100px; 
+    height: auto; 
+}
+
+@media (max-width: 768px) {
+    .navbar img {
+        width: 60px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar img {
+        width: 40px; 
+    }
+}
+.custom-container {
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.upload-section {
+  border: 2px dashed #ccc;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.separator {
+  border-left: 2px solid black;
+  height: auto;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.template-link {
+  text-align: right;
+  margin-top: 10px;
+  /* width: 100%; */
+}
+
+.buttons-container {
+  /* width: 100%; */
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+@media (max-width: 1400px) {
+  .d-flex {               /*başka sayfalarda da var dikkat et kont et*/
+      flex-direction: column;
+  }
+
+  .separator {
+      border-left: none;
+      border-top: 2px solid black;
+      margin: 20px 0;
+  }
+
+  .template-link {
+      text-align: center;
+      margin-top: 20px;
+  }
+
+  .buttons-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .buttons-container button {
+      width: 100%;
+      margin: 5px 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Genel stil kuralları */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 125px
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 200px;
+  background-color: #f8f9fa;
+  padding-top: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  margin-top: 125px; /* Navbar yüksekliğine göre ayarlayın */
+}
+
+.sidebar a {
+  padding: 10px 15px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #333;
+  display: block;
+}
+
+.sidebar a:hover {
+  background-color: #ddd;
+  color: #000;
+}
+
+.container {
+  margin-left: 220px;
+  padding: 20px;
+  margin-top: 56px; /* Navbar yüksekliğine göre ayarlayın */
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+      width: 100%;
+      height: auto;
+      position: relative;
+      margin-top: 0;
+  }
+
+  .container {
+      margin-left: 0;
+      margin-top: 0;
+  }
+
+  .sidebar a {
+      float: left;
+      padding: 10px;
+      width: 100%;
+      text-align: center;
+  }
+
+  .sidebar a:hover {
+      background-color: #ddd;
+      color: #000;
+  }
+}
+
+@media (max-width: 600px) {
+  .sidebar a {
+      text-align: left;
+      float: none;
+  }
+}
+
+.myApplications{
+  width:50vh
+}

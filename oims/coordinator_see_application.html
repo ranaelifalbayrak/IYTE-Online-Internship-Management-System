@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title> Applicants</title>
+</head>
+
+<body>
+    <nav class="navbar bg-danger">
+        <img src="iyte-logo.png"  class="ms-2">
+        <div class="me-5 text-white fs-2" id="name"></div>
+    </nav>
+    <div class="sidebar">
+        <a href="coordinator_applications.html">Applications List</a>
+        <a href="coordinator_check_announcements.html">Check Announcements</a>
+      </div>
+      <main class="container d-flex flex-column align-items-center justify-content-center" style="height: 80vh;">
+        <h1>Checking Internship Application</h1>
+        <div class="d-flex align-items-center mt-4">
+            <h2  class="me-3"><i class="bi bi-filetype-pdf"></i></h2>
+            <a href="#" class="text-decoration-none" id="pdfLink">company_name_summer_practice_application_form</a>
+            
+        </div>
+        <div class="mt-4">
+            <button class="btn btn-danger me-3" onclick="coordinator_decline()">Decline</button>
+            <button class="btn btn-primary" onclick="coordinator_approve()">Approve</button>
+        </div>
+    </main>
+      </div>
+      </div>
+        
+</body>
+<script src="script.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+    window.onload = function() {
+        document.getElementById("name").innerHTML = localStorage.getItem("name");
+    }
+    </script>
+<script>coordinator_see_application()</script>
+
+
+</html>

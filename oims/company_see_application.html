@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Applicants</title>
+</head>
+
+<body>
+    <nav class="navbar bg-danger">
+        <img src="iyte-logo.png" class="ms-2">
+        <div class="me-5 text-white fs-2" id="name"></div>
+    </nav>
+    <div class="sidebar">
+        <a href="company_applicants.html">Applicants</a>
+        <a href="make_announcement.html">Make Announcement</a>
+        <a href="company_finalized_applicants.html">Finalized Applicants</a>
+    </div>
+    <div class="container d-flex flex-column align-items-center" style="min-height: 60vh;">
+        <h1 class="mt-5">
+            Applicants
+        </h1>
+        <div class="custom-container col-md-8">
+            <div class="d-flex justify-content flex-wrap">
+                <div class="left p-3">
+                    <p>Download application letter</p>
+                    <a href="#" class="btn btn-link" id="pdfLink"></a>
+                </div>
+                <div class="separator"></div>
+             
+                    <div class="left p-3">
+                        <div class="row">
+                            <h1 class="col-3"><i class="bi bi-person-circle"></i></h1>
+                            <div class="col">
+                                <h4>Name</h4>
+                                <div class="name">Name</div>
+                                <h4>E-mail</h4>
+                                <div class="student_mail">Name</div>
+                                <h4>Class</h4>
+                                <div class="class">Class</div>
+                                <h4>GPA</h4>
+                                <div class="gpa">Class</div>
+                                <h4>Extra Information</h4>
+                                <div class="extra">Extra information</div></div>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="buttons-container col-md-8">
+            <button onclick="declineStudent()" class="btn btn-danger rounded-pill">Decline</button>
+            <button class="btn btn-primary rounded-pill" onclick="approveStudent()">Approve</button>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+    window.onload = function() {
+        document.getElementById("name").innerHTML = localStorage.getItem("name");
+    }
+</script>
+<script>seeApplicant()</script>
+
+</html>
+
+
+
